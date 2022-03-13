@@ -10,7 +10,7 @@ function NavBar() {
             <span className='navbar__span'>Eris Store</span>
             <div className='navbar__search'>
                 <input className='navbar__searcher' type="text" placeholder="Buscar productos.."></input>
-                <a className='navbar__a' href='#'><BsSearch className='navbar__icon'/></a>
+                <a className='navbar__lupa' href='#'><BsSearch className='navbar__lupa'/></a>
             </div>
             </div>
         <div className='navbar__container'>
