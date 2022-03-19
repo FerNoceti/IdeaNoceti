@@ -1,0 +1,20 @@
+.itemListContainer{
+    padding: 20px 10px;
+    background-color: #A8DADC;
+}
+
+.itemListContainer__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: #1D3557 solid 1px;
+    padding-bottom: 30px;
+}
+
+.itemListContainer__subtitulo{
+    display: flex;
+    justify-content: left;
+    font-size: 1.5rem;
+    margin: 15px 0 0 15px;
+}
