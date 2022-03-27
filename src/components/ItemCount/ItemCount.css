@@ -1,9 +1,16 @@
 .itemcount{
-    display: flex;
-    flex-direction: row;
     background-color: #fff;
-    width: 110px;
+    width: 150px;
+    background: none;
+}
+
+.itemcount__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .itemcount__button{
@@ -18,11 +25,19 @@
     background: none;
 }
 
+.itemcount__buttonAdd{
+    border: none;
+    background: none;
+    font-weight: 1000;
+    font-size: 17px;
+    padding: 3px 10px;
+}
+
 .itemcount__cantidad{
     display: flex;
     align-items: center;
     justify-content: center;
     background: none;
     font-size: 20px;
-    width: 50px;
+    width: 80px;
 }
