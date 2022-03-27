@@ -1,0 +1,28 @@
+.itemcount{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 110px;
+    border-radius: 20px;
+}
+
+.itemcount__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: blue;
+    background: none;
+}
+
+.itemcount__cantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    font-size: 20px;
+    width: 50px;
+}
