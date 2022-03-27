@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ItemListContainer.css';
 import ItemCount from '../ItemCount/ItemCount';
 
 function ItemListContainer() {
 
     function addCart(){
-        const cantidad = document.getElementById("cantidad").innerHTML;
-        console.log(`añadido ${cantidad} al carrito`);
+        console.log(`se agrego al carrito`);
     }
 
     return (

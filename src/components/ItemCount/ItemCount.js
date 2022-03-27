@@ -12,7 +12,7 @@ class ItemCount extends Component{
 
     removeItem = () =>{
 
-        if (this.state.count != 0){
+        if (this.state.count !== 0){
             this.setState({
                 count: this.state.count - 1
             })
@@ -34,11 +34,11 @@ class ItemCount extends Component{
         <div className='itemcount'>
             <div className='itemcount__container'>
                 <button onClick={this.removeItem} className='itemcount__button'>-</button>
-                <span id="cantidad" className='itemcount__cantidad'>{this.state.count}</span>
+                <span className='itemcount__cantidad'>{this.state.count}</span>
                 <button onClick={this.addItem} className='itemcount__button'>+</button>
             </div>
             <div className='itemcount__container'>
-                <button onClick={this.onAdd} className="itemcount__buttonAdd" disabled={this.state.count == 0}>Agregar al carrito</button>
+                <button onClick={this.onAdd} className="itemcount__buttonAdd" disabled={this.state.count === 0}>Agregar al carrito</button>
             </div>
         </div>
         )
