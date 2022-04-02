@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './ItemListContainer.css';
 import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
@@ -18,12 +18,28 @@ function ItemListContainer() {
         <Item id="5" title={"Conjunto"} img={"https://sporting.vteximg.com.br/arquivos/ids/261671-1500-1500/6FS6571-000-1.jpg?v=637521219325130000"} price={"70"}/>
     ]
 
+    const promesa = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(items)
+            },2000)
+        })
+    }
+
+    const [listaDeItems, setListaDeItems] = useState([])
+    useEffect(() => {
+        promesa().then(response =>{
+            console.log(response);
+            setListaDeItems(response);
+        })
+    }, [])
 
 
     return (
         <div className='itemListContainer'>
             <span className='itemListContainer__titulo'>Ejemplo de Futuro Catálogo</span>
-            <ItemList items={items}/>
+            <ItemList items={listaDeItems}/>
+            <button onClick={() => {console.log("click"); setListaDeItems(items)}}>Cargar Items</button>
             <span className='itemListContainer__subtitulo'>Contador con botón</span>
             <div>
                 Item 1
@@ -44,6 +60,5 @@ function ItemListContainer() {
         </div>
     )
   }
-
 
 export default ItemListContainer

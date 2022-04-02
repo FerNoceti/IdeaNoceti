@@ -1,4 +1,3 @@
-
 import { Component } from 'react'
 import './ItemList.css'
 
@@ -7,19 +6,8 @@ class ItemList extends Component{
 
     constructor(props){
         super(props);
-        this.items = [];
+        this.items = [props.items];      
 
-        const promesa = () => {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    resolve(console.log("bandera"))
-                },2000)
-            })
-        }
-
-        promesa().then(()=>{
-            this.items = [props.items]
-        })
     }
 
     render(){
