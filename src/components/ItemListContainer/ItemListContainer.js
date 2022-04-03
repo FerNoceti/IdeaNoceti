@@ -34,12 +34,14 @@ function ItemListContainer() {
         })
     }, [])
 
+    const [titulo, setTitulo] = useState("Hola")
+
 
     return (
         <div className='itemListContainer'>
             <span className='itemListContainer__titulo'>Ejemplo de Futuro Catálogo</span>
             <ItemList items={listaDeItems}/>
-            <button onClick={() => {console.log("click"); setListaDeItems(items)}}>Cargar Items</button>
+            <button onClick={() => setListaDeItems(items)}>Cargar Items</button>
             <span className='itemListContainer__subtitulo'>Contador con botón</span>
             <div>
                 Item 1
