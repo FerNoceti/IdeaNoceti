@@ -41,7 +41,6 @@ function ItemListContainer() {
         <div className='itemListContainer'>
             <span className='itemListContainer__titulo'>Ejemplo de Futuro Catálogo</span>
             <ItemList items={listaDeItems}/>
-            <button onClick={() => setListaDeItems(items)}>Cargar Items</button>
             <span className='itemListContainer__subtitulo'>Contador con botón</span>
             <div>
                 Item 1
