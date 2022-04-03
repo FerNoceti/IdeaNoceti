@@ -1,0 +1,24 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(251, 251, 251, 0.596);
+}
+
+.item__title{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.item__image{
+    width: 100%;
+}
+
+.item__precio{
+    width: 100%;
+    font-size: 1.3rem;
+}
