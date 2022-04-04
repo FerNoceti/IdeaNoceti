@@ -34,9 +34,6 @@ function ItemListContainer() {
         })
     }, [])
 
-    const [titulo, setTitulo] = useState("Hola")
-
-
     return (
         <div className='itemListContainer'>
             <span className='itemListContainer__titulo'>Ejemplo de Futuro Catálogo</span>
