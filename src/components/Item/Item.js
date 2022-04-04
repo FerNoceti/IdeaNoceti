@@ -8,7 +8,7 @@ class Item extends Component{
         this.id = props.id;
         this.title = props.title;
         this.img = props.img;
-        this.price = props.price
+        this.price = props.price;
     }
 
 
